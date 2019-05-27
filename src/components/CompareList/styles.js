@@ -17,6 +17,34 @@ export const Repository = styled.div`
   flex-direction: column;
   margin: 0 10px;
 
+  .actions {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+
+    button {
+      margin: 0 10px 10px 10px;
+      padding: 5px;
+      font-size: 15px;
+      color: white;
+      font-weight: bold;
+      border-radius: 3px;
+      border: none;
+
+      &.refresh {
+        background-color: #63f5b8;
+      }
+      &.remove {
+        background-color: #ea7782;
+      }
+
+      &:hover {
+        cursor: pointer;
+        filter: brightness(85%);
+      }
+    }
+  }
+
   header {
     padding: 30px;
     display: flex;
